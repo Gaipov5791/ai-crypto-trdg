@@ -1,0 +1,40 @@
+:root {
+  color-scheme: dark;
+  --bg: #0b0d12;
+  --bg-elev: #11141c;
+  --bg-card: #131722;
+  --line: #1e2430;
+  --line-strong: #3d4a63;
+  --text: #d7dde8;
+  --muted: #8b9bb4;
+  --accent: #4fd1c5;
+  --pos: #3dd68c;
+  --neg: #f0616d;
+  --warn: #e8c547;
+  --font: "Cascadia Code", "Consolas", "IBM Plex Mono", ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+}
+
+body {
+  overflow-x: hidden;
+  background-image:
+    linear-gradient(rgba(79, 209, 197, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(79, 209, 197, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}

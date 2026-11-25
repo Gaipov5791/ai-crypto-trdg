@@ -1,0 +1,12 @@
+{
+  "name": "ai-crypto-trdg",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail -n api,web -c cyan,magenta \"npm run dev:api\" \"npm run dev:web\"",
+    "dev:api": "cd apps\\api && .venv\\Scripts\\python.exe -m uvicorn app.main:app --reload --port 8000",
+    "dev:web": "node scripts/free-port.mjs 5173 && npm run dev --prefix apps/web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.4"
+  }
+}
